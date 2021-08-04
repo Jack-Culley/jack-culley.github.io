@@ -6,6 +6,7 @@ import Nav from './Nav';
 import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
+import Home from './Home';
 
 function Index() {
     return (
@@ -13,13 +14,14 @@ function Index() {
             <div className="Nav">
                 <Nav />
                 <Switch>
+                    <Route path="/" exact component={Home}/>
                     <Route path="/about" component={About}/>
                     <Route path="/projects" component={Projects}/>
                     <Route path="/contact" component={Contact}/>
                 </Switch>
-                <div className="Overview">\
-                    <h2>Homepage</h2>
-                </div>
+            </div>
+            <div className="Footer">
+
             </div>
         </Router>
     );

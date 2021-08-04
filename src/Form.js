@@ -19,8 +19,6 @@ class Form extends React.Component {
     sendEmail = (event) => {
         event.preventDefault();
 
-        let status;
-
             emailjs.sendForm('service_t3uxmoj', 'template_3bhou6t', event.target, 'user_f5pMFS9fQDASFFnpbD5bk')
               .then((result) => {
                   console.log(result.text);
@@ -61,6 +59,12 @@ class Form extends React.Component {
     }
 
     render() {
+        const { name, message, email, reason } = this.state;
+        const enabled =
+            name.trim().length > 0 &&
+            message.trim().length > 0 &&
+            email.trim().length > 0 &&
+            reason != 'select one';
         return (
             <form onSubmit={this.sendEmail}>
                 <div>
@@ -68,12 +72,12 @@ class Form extends React.Component {
                     <input type='text' value={this.state.name} onChange={this.handleNameChange} name="from_name"/>
                 </div>
                 <div>
-                    <label>Your Message</label>
-                    <textarea value={this.state.message} onChange={this.handleMessageChange} name="message"/>
-                </div>
-                <div>
                     <label>Email</label>
                     <input type='text' value={this.state.email} onChange={this.handleEmailChange} name="from_email"/>
+                </div>
+                <div>
+                    <label>Your Message</label>
+                    <textarea value={this.state.message} onChange={this.handleMessageChange} name="message"/>
                 </div>
                 <div>
                     <label>Reason for contact</label>
@@ -83,8 +87,10 @@ class Form extends React.Component {
                         <option value='business'>Business</option>
                         <option value='fun'>For Fun</option>
                     </select>
-                <button type="submit">Submit</button>
                     <div>{this.state.status}</div>
+                </div>
+                <div>
+                    <button disabled={!enabled} className='submit-button' type="submit">Submit Form</button>
                 </div>
             </form>
         );

@@ -20,8 +20,8 @@ function Index() {
                     <Route path="/contact" component={Contact}/>
                 </Switch>
             </div>
-            <div className="Footer">
-
+            <div>
+                <p>This is the footer</p>
             </div>
         </Router>
     );

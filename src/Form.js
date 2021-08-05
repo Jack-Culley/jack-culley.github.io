@@ -12,8 +12,9 @@ class Form extends React.Component {
             name : '',
             message : '',
             email : '',
-            reason : 'select one',
+            reason : '',
             status : '',
+            rep : ''
         }
     }
     sendEmail = (event) => {
@@ -37,6 +38,12 @@ class Form extends React.Component {
     handleNameChange = (event) => {
         this.setState ({
             name : event.target.value
+        })
+    }
+
+    handleRepChange = (event) => {
+        this.setState ({
+            rep : event.target.value
         })
     }
 
@@ -64,33 +71,33 @@ class Form extends React.Component {
             name.trim().length > 0 &&
             message.trim().length > 0 &&
             email.trim().length > 0 &&
-            reason != 'select one';
+            reason.trim().length > 0;
         return (
             <form onSubmit={this.sendEmail}>
-                <div>
-                    <label>Name</label>
-                    <input type='text' value={this.state.name} onChange={this.handleNameChange} name="from_name"/>
+                <div className="top-row-form">
+                    <div className="form-input">
+                        <input type='text' value={this.state.name} onChange={this.handleNameChange} name="from_name" placeholder="Full Name"/>
+                    </div>
+                    <div className="form-input">
+                        <input type='text' value={this.state.email} onChange={this.handleEmailChange} name="from_email" placeholder="Email"/>
+                    </div>
                 </div>
-                <div>
-                    <label>Email</label>
-                    <input type='text' value={this.state.email} onChange={this.handleEmailChange} name="from_email"/>
+                <div className="mid-row-form">
+                    <div className="reason">
+                        <input type='text' value={this.state.reason} onChange={this.handleReasonChange} name="reason" placeholder="Subject"/>
+                    </div>
+                    <div className="rep">
+                        <input type='text' value={this.state.rep} onChange={this.handleRepChange} name="rep" placeholder="Representing(not required)"/>
+                    </div>
                 </div>
-                <div>
-                    <label>Your Message</label>
-                    <textarea value={this.state.message} onChange={this.handleMessageChange} name="message"/>
-                </div>
-                <div>
-                    <label>Reason for contact</label>
-                    <select value={this.state.reason} onChange={this.handleReasonChange} name="reason">
-                        <option value='select one'>Select one</option>
-                        <option value='inquiry'>Inquiry</option>
-                        <option value='business'>Business</option>
-                        <option value='fun'>For Fun</option>
-                    </select>
+                <div className="bottom-row-form">
+                    <div className="form-input">
+                        <textarea value={this.state.message} onChange={this.handleMessageChange} name="message" placeholder="Your Message"/>
+                    </div>
                     <div>{this.state.status}</div>
                 </div>
                 <div>
-                    <button disabled={!enabled} className='submit-button' type="submit">Submit Form</button>
+                    <button disabled={!enabled} className='submit-button' type="submit">Send Your Message</button>
                 </div>
             </form>
         );

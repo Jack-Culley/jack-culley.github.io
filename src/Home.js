@@ -3,8 +3,9 @@ import './index.css';
 
 function Home() {
   return (
-    <div>
-      <h1>HomePage</h1>
+    <div className="main">
+      <h1>John "Jack" Culley</h1>
+
     </div>
   );
 }

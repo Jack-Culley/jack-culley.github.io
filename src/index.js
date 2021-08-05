@@ -20,8 +20,14 @@ function Index() {
                     <Route path="/contact" component={Contact}/>
                 </Switch>
             </div>
-            <div>
-                <p>This is the footer</p>
+            <div className="footer">
+                <img src="/Files/java-done.png" width="50" height="50" className="feet"/>
+                <img src="/Files/css-done.png" width="50" height="50" className="feet"/>
+                <img src="/Files/html-done.png" width="50" height="50" className="feet"/>
+                <img src="/Files/react-done.png" width="50" height="50" className="feet"/>
+                <img src="/Files/js-done.png" width="50" height="50" className="feet"/>
+                <img src="/Files/nodejs-done.png" width="50" height="50" className="feet"/>
+
             </div>
         </Router>
     );

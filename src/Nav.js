@@ -26,6 +26,9 @@ function Nav() {
             <a href="https://www.linkedin.com/in/jack-culley-444b81204/" target="_blank">
                 <img src='/Files/linkedin-logo-final.png' width="50" height="50" className='social'/>
             </a>
+            <a href="mailto:jcu2ley@gmail.com" target="_blank">
+                <img src='/Files/email-done.png' width='60' height='40' className='social'/>
+            </a>
         </div>
     </nav>
   );

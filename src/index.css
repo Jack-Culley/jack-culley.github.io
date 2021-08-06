@@ -11,6 +11,8 @@ body, textarea, input, select {
 h1 {
     font-size: 300%;
     color: white;
+    margin-top: 0.4em;
+    margin-bottom: 0px;
 }
 
 code {
@@ -23,7 +25,7 @@ code {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-bottom: 45%;
+    background-attachment: fixed;
 }
 
 nav {
@@ -150,6 +152,7 @@ form {
     height: 50%;
     display: flex;
     flex-direction: column;
+    padding-bottom: 20%;
 }
 
 .form-input {
@@ -190,5 +193,55 @@ form {
 
 .main {
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
+.res-container {
+    padding: 10%;
+}
+
+.contact-head {
+    height: 50%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    font-size: 24px;
+    color: white;
+}
+
+p {
+    width: 40%;
+    color: white;
+    font-size: 18px;
+}
+
+.intro, .prof, .interests {
+    display: flex;
+    flex-direction: column;
+    padding: 13%;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    padding-top: 3%;
+}
+
+.left {
+    text-align: left;
+    padding-left: 5%;
+}
+
+.right {
+    text-align: right;
+    padding-right: 5%;
+}

@@ -1,12 +1,20 @@
 import React from 'react';
 import './index.css';
 import { Link } from 'react-router-dom';
+import useOnScreen from './Hooks/useOnScreen';
 
 function About() {
+
+    const abOptions = {
+         threshold: 0.22,
+    }
+    const [abRef, abVisibility] = useOnScreen(abOptions);
+
   return (
     <div className="main">
       <title>About Me</title>
       <h1>About Jack Culley</h1>
+      <div ref={abRef} className={abVisibility ? "scroll" : "unscroll"}>
       <div className='intro'>
         <div className='heading'>
         <h3>Introduction</h3>
@@ -37,6 +45,7 @@ function About() {
         <p className='left'>Outside of school I enjoy spending my time lifting, video-gaming, woodworking, and simply hanging out with
         friends/family. I also enjoy coding(hence my major) and like to learn new technologies for building various applications.
         My immediate interests related to computer science are DATABASE STUFF, and python</p>
+        </div>
         </div>
       </div>
     </div>

@@ -1,10 +1,18 @@
 import React from 'react';
 import './index.css';
 import { Link } from 'react-router-dom';
+import useOnScreen from './Hooks/useOnScreen';
+
 
 function Nav() {
+
+    const navOptions = {
+        threshold: 0.5
+    }
+    const [navRef, navBackground] = useOnScreen(navOptions);
+
   return (
-    <nav>
+    <nav className={navBackground ? "scroll" : ""}>
         <Link className='logo' to='/'>
             <h3>Logo</h3>
         </Link>

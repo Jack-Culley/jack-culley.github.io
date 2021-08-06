@@ -8,16 +8,26 @@ body, textarea, input, select {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+
+}
+
 h1 {
     font-size: 300%;
     color: white;
-    margin-top: 0.4em;
-    margin-bottom: 0px;
+    margin-top: 6.5em;
+    margin-bottom: 3em;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .Nav {
@@ -32,7 +42,21 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: 35%;
+    position: fixed;
+    flex-wrap: wrap;
+    width: 100%;
+    --text: white;
+    --text-inverse: #262626;
+    --background: transparent;
+}
+
+.scroll {
+    background-color: black;
+    transition: 0.75s;
+}
+
+.unscroll {
+    transition: 0.75s;
 }
 
 li {
@@ -93,7 +117,7 @@ textarea {
     padding: 8px 30px;
     border-radius: 4px;
     margin: 4px;
-    background: none;
+    background: var(--background);
 }
 
 ::placeholder {
@@ -101,14 +125,22 @@ textarea {
     opacity: 0.8;
 }
 
-.submit-button:hover , .nav-link:hover{
-    border-color: #595959;
-    color: #595959;
+.submit-button:hover {
+    background: white;
+    color: black;
+}
+
+.nav-link:hover{
+    border-color: var(--text);
+    color: var(--text-inverse);
+    background: var(--text);
 }
 
 .submit-button:disabled {
     cursor: not-allowed;
     opacity: 0.4;
+    background: transparent;
+    color: white;
 }
 
 .resume{
@@ -135,13 +167,14 @@ textarea {
     height: 35%;
     width: 5%;
     margin: 20px;
+    display: flex;
 }
 
 .socials {
     width: 15%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .social {
@@ -157,7 +190,7 @@ form {
 
 .form-input {
     display: flex;
-    width: 97%;
+    width: 100%;
 }
 
 .top-row-form, .mid-row-form {
@@ -180,7 +213,7 @@ form {
 }
 
 .footer {
-    background-color:  #00001a;
+    background-color: black;
     display: flex;
     justify-content: space-around;
 }
@@ -214,6 +247,10 @@ form {
 h3 {
     font-size: 24px;
     color: white;
+}
+
+.secondary {
+    padding-top: 9em;
 }
 
 p {

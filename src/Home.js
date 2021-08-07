@@ -20,6 +20,7 @@ function Home() {
     <div className="main">
         <h1>Welcome to my website!</h1>
         <div ref={homeRef} className={homeVisibility ? "scroll home" : "unscroll home"}>
+            <div></div>
             <h3 className='secondary'>John "Jack" Culley</h3>
             <img src='/Files/headshot.jpg' width='200px' height='300px'/>
             <p className="home-desc">This is a website I built with ReactJS.

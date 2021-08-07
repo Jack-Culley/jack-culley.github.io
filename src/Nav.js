@@ -7,12 +7,13 @@ import useOnScreen from './Hooks/useOnScreen';
 function Nav() {
 
     const navOptions = {
-        threshold: 0.5
+//        rootMargin: "400px 0px -150px 0px"
     }
     const [navRef, navBackground] = useOnScreen(navOptions);
 
   return (
-    <nav className={navBackground ? "scroll" : ""}>
+  <div>
+    <nav className={navBackground ? "scroll" : "unscroll"}>
         <Link className='logo' to='/'>
             <h3>Logo</h3>
         </Link>
@@ -39,6 +40,9 @@ function Nav() {
             </a>
         </div>
     </nav>
+    <div ref={navRef} className="nav-ref"></div>
+  </div>
+
   );
 }
 

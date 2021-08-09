@@ -14,17 +14,23 @@ function Nav() {
   return (
   <div>
     <nav className={navBackground ? "scroll" : "unscroll"}>
-        <Link className='logo' to='/'>
+        <a className='logo' href='#root'>
             <h3>Logo</h3>
-        </Link>
+        </a>
         <ul className='nav-links'>
-            <Link className='nav-link' to='/projects'>
-                <li>Projects</li>
-            </Link>
-            <Link className='nav-link' to='/contact'>
+            <a href='#about' className='nav-link'>
+                <li>About Me</li>
+            </a>
+            <a className='nav-link' href='#projects'>
+                <li>My Projects</li>
+            </a>
+            <a className='nav-link' href='#contact'>
                 <li>Contact Me</li>
-            </Link>
+            </a>
         </ul>
+        <div className="res-container">
+             <Link className='resume' to="/Files/Resume.pdf" target="_blank" download>Resume Download</Link>
+        </div>
     </nav>
     <div ref={navRef} className="nav-ref"></div>
   </div>

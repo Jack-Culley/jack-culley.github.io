@@ -11,8 +11,8 @@ function About() {
 //    const [abRef, abVisibility] = useOnScreen(abOptions);
 
   return (
-    <div className="home">
-      <h2>A little about me</h2>
+    <div className="main" id='about'>
+      <h1>About me</h1>
 
       <div className='intro'>
         <div className='heading'>
@@ -20,7 +20,7 @@ function About() {
         </div>
         <div className='info'>
         <img src='/Files/todo.png' width='200px' height='200px'/>
-        <h6 className='left'>My name is John, but some people call me Jack. I was born and raised in Columbus, Ohio. I am currently 20
+        <h6 className='left ab text-box'>My name is John, but some people call me Jack. I was born and raised in Columbus, Ohio. I am currently 20
         years old. </h6>
         </div>
       </div>
@@ -29,7 +29,7 @@ function About() {
         <h3>Professional</h3>
         </div>
         <div className='info'>
-        <h6 className='right'>I graduated high school in the spring of 2019. I chose to attend The Ohio State University where I am
+        <h6 className='right ab text-box'>I graduated high school in the spring of 2019. I chose to attend The Ohio State University where I am
         currently a junior pursuing a bachelors degree in Computer Science and Engineering. I plan to graduate with my
         intended degree in the spring of 2023.</h6>
         <img src='/Files/todo.png' width='200px' height='200px'/>
@@ -41,7 +41,7 @@ function About() {
         </div>
         <div className='info'>
         <img src='/Files/todo.png' width='200px' height='200px'/>
-        <h6 className='left'>Outside of school I enjoy spending my time lifting, video-gaming, woodworking, and simply hanging out with
+        <h6 className='left ab text-box'>Outside of school I enjoy spending my time lifting, video-gaming, woodworking, and simply hanging out with
         friends/family. I also enjoy coding(hence my major) and like to learn new technologies for building various applications.
         My immediate interests related to computer science are DATABASE STUFF, and python</h6>
         </div>

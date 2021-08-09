@@ -51,4 +51,3 @@ function Home() {
 
 export default Home;
 
-// This is a website I built with ReactJS. I really enjoyed designing and developing this website and I hope you can enjoy it as well! Please, have a look around and let me know if there is anyway I can improve my design! *Praises are also accepted.

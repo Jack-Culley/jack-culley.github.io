@@ -5,7 +5,15 @@ function WebsiteProj() {
   return (
     <div className="Proj">
         <h2>This Website</h2>
-        <img href="https://github.com/Jack-Culley/cryptodatacollection" src='Files/headshot.jpg' width="50" height="50"/>
+        <a href="https://github.com/Jack-Culley/jackwebsite" target="_blank">
+            <img src='Files/headshot.jpg' width="40%" height="40%"/>
+        </a>
+        <h3 className='text-box proj'>This was my first website built using ReactJS. In this website, 
+        I utilized ReactRouter,  
+        {/* <a href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API" target='_blank'>IntersectionObserver</a> */}
+        (for the scroll animations), and EmailJS(temporary) 
+        for the contact form. I learned a lot from this specific project, but am still a beginner so
+        please let me know if there is anyway I can improve my design! (Praises also accepted)</h3>
     </div>
   );
 }

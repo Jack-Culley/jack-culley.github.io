@@ -11,7 +11,7 @@ function Index() {
             <div className="Nav">
                 <Nav />
                 <Switch>
-                    <Route path="/" exact component={Home}/>
+                    <Route path="/" component={Home}/>
                 </Switch>
             </div>
             <div className="footer">

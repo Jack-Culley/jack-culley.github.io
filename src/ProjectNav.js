@@ -6,10 +6,10 @@ function ProjectNav() {
   return (
     <div className="pagination-cont">
         <ul className='pagination'>
-            <Link to='/'>
+            <Link to='/' className='proj-link'>
                 <li>1</li>
             </Link>
-            <Link to='/j'>
+            <Link to='/j' className='proj-link'>
                 <li>2</li>
             </Link>
         </ul>

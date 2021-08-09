@@ -7,7 +7,7 @@ import WebsiteProj from './WebsiteProj.js';
 
 function Projects() {
   return (
-    <div className="main">
+    <div className="main" id="project">
       <h2>Projects</h2>
       <Router>
         <div className='project-nav'>

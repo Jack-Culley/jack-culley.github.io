@@ -7,7 +7,7 @@ import useOnScreen from './Hooks/useOnScreen';
 function Nav() {
 
     const navOptions = {
-        rootMargin: "2000px 0px 50px 0px"
+        rootMargin: "3000px 0px 50px 0px"
     }
     const [navRef, navBackground] = useOnScreen(navOptions);
 
@@ -21,7 +21,7 @@ function Nav() {
             <a href='#about' className='nav-link'>
                 <li>About Me</li>
             </a>
-            <a className='nav-link' href='#projects'>
+            <a className='nav-link' href='#project'>
                 <li>My Projects</li>
             </a>
             <a className='nav-link' href='#contact'>

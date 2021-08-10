@@ -28,7 +28,7 @@ function Nav() {
             </a>
         </div>
         <div className="res-container">
-             <Link className='resume' to="/Files/Resume.pdf" target="_blank" download>Resume Download</Link>
+             <Link className='resume' to="Files/Resume.pdf" target="_blank" download>Resume Download</Link>
         </div>
     </nav>
     <div ref={abRef} className="ab-ref"></div>

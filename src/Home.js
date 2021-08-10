@@ -17,7 +17,7 @@ function Home() {
     <div className="main">
         <div className="container">
         <div className="column">
-            <img src='/Files/headshot.jpg' width='270px' height='auto'/>
+            <img src='Files/headshot.jpg' width='270px' height='auto'/>
         </div>
         <div className="column text-box">
         <h1>John "Jack" Culley</h1>
@@ -25,17 +25,17 @@ function Home() {
         
         <div className='socials'>
                     <a className='plug' href="https://github.com/Jack-Culley" target="_blank">
-                        <img className='ext' src='/Files/git-logo.png' width="45" height="45"/>
+                        <img className='ext' src='Files/git-logo.png' width="45" height="45"/>
                     </a>
                     <a className='plug' href="https://www.linkedin.com/in/jack-culley-444b81204/" target="_blank">
-                        <img className='ext' src='/Files/linkedin.png' width="50" height="50"/>
+                        <img className='ext' src='Files/linkedin.png' width="50" height="50"/>
                     </a>
                     <a className='plug' href="mailto:jcu2ley@gmail.com" target="_blank">
-                        <img className='ext' src='/Files/email.png' width='45' height='45'/>
+                        <img className='ext' src='Files/email.png' width='45' height='45'/>
                     </a>
         </div>
         <a href="#about" className='plug'>
-            <img className='ext' src='/Files/down-done.png' width="40" height="40"/>
+            <img className='ext' src='Files/down-done.png' width="40" height="40"/>
         </a>
         </div>
         </div>

@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/jackwebsite/static/css/main.de26c148.chunk.css",
+    "main.js": "/jackwebsite/static/js/main.4578e7b5.chunk.js",
+    "main.js.map": "/jackwebsite/static/js/main.4578e7b5.chunk.js.map",
+    "runtime-main.js": "/jackwebsite/static/js/runtime-main.61a80901.js",
+    "runtime-main.js.map": "/jackwebsite/static/js/runtime-main.61a80901.js.map",
+    "static/js/2.b0fec7a4.chunk.js": "/jackwebsite/static/js/2.b0fec7a4.chunk.js",
+    "static/js/2.b0fec7a4.chunk.js.map": "/jackwebsite/static/js/2.b0fec7a4.chunk.js.map",
+    "index.html": "/jackwebsite/index.html",
+    "static/css/main.de26c148.chunk.css.map": "/jackwebsite/static/css/main.de26c148.chunk.css.map",
+    "static/js/2.b0fec7a4.chunk.js.LICENSE.txt": "/jackwebsite/static/js/2.b0fec7a4.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/jackwebsite/static/media/Eastman-Condensed-Regular-trial.bc96fd00.otf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.61a80901.js",
+    "static/js/2.b0fec7a4.chunk.js",
+    "static/css/main.de26c148.chunk.css",
+    "static/js/main.4578e7b5.chunk.js"
+  ]
+}

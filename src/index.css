@@ -32,11 +32,9 @@ h1 {
     font-size: 300%;
     color: var(--fontcolor);
     margin: 0%;
-    font-family: var(--myfont);
 }
 
 h2 {
-    padding: 1.5%;
     font-size: 200%;
     color: var(--fontcolor);
 }
@@ -119,6 +117,7 @@ nav {
     padding: 1%;
     margin: 0% 2%;
     border-radius: 4px;
+    border: 1px solid var(--stand-out);
     background-color: var(--stand-out);
     color: var(--fontinverse);
 }
@@ -137,6 +136,11 @@ nav {
 }
 
 .nav-link:hover::after, .link:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.nav-link.seen::after {
     transform: scaleX(1);
     transform-origin: left;
 }
@@ -210,7 +214,7 @@ textarea {
 
 .socials {
     width: 15%;
-    margin-bottom: 1.25em;
+    margin-bottom: 3.25em;
     padding: 0% 15%;
     display: flex;
     align-items: center;
@@ -221,6 +225,7 @@ textarea {
     width: 70%;
     background-color: #222629;
     border-radius: 10px;
+    padding: 3% 0%;
 }
 
 .arrow {
@@ -231,6 +236,7 @@ form {
     height: 50%;
     display: flex;
     flex-direction: column;
+    padding-top: 5%;
 }
 
 .form-input {
@@ -357,15 +363,13 @@ h3 {
 .left.unvisible {
     transform: translateX(55%);
     opacity: 0;
-    transition: transform 0.5s ease-in;
-    transition: opacity 0.3s ease-out;
+    transition: transform 0.5s ease-in, opacity 0.3s ease-out;
 }
 
 .left.visible {
     transform: translateX(0%);
     opacity: 1;
-    transition: opacity 0.1s ease-in;
-    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, opacity 0.1s ease-in;
 }
 
 .right {
@@ -375,19 +379,29 @@ h3 {
 .right.unvisible {
     transform: translateX(-100%);
     opacity: 0;
-    transition: transform 0.5s ease-in;
-    transition: opacity 0.3s ease-out;
+    transition: transform 0.5s ease-in, opacity 0.3s ease-out;
 }
 
 .right.visible {
     transform: translateX(0%);
     opacity: 1;
-    transition: transform 0.5s ease-in;
-    transition: opacity 0.1s ease-in;
+    transition: transform 0.5s ease-in, opacity 0.1s ease-in;
 }
 
-.nav-ref {
+.ab-ref {
     height: 1px;
-    position: relative;
-    top: 76rem;
+    position: absolute;
+    top: 130rem;
+}
+
+.proj-ref {
+    position: absolute;
+    height: 1px;
+    top: 205rem;
+}
+
+.con-ref {
+    position: absolute;
+    height: 1px;
+    top: 250rem;
 }

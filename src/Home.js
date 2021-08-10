@@ -34,14 +34,11 @@ function Home() {
                         <img className='ext' src='/Files/email.png' width='45' height='45'/>
                     </a>
         </div>
-        <div className="arrow">
-        </div>
-        <a href="#x" className='plug'>
+        <a href="#about" className='plug'>
             <img className='ext' src='/Files/down-done.png' width="40" height="40"/>
         </a>
         </div>
         </div>
-        <div id='x' className="home"></div>
         <About />
         <Projects />
         <Contact />

@@ -29,6 +29,9 @@ function About() {
         years old. </h6>
         </div>
       </div>
+      <a href="#prof" className='plug' id='prof'>
+            <img className='ext' src='/Files/down-done.png' width="40" height="40"/>
+      </a>
       <div className={profVisibility ? 'prof vis' : 'prof unvis'}>
         <div className='heading'>
         <h3>Professional</h3>
@@ -40,6 +43,9 @@ function About() {
         <img className={profVisibility ? 'left visible' : 'left unvisible'} src='/Files/todo.png' width='200px' height='200px'/>
         </div>
       </div>
+      <a href="#int" className='plug' id='int'>
+            <img className='ext' src='/Files/down-done.png' width="40" height="40"/>
+      </a>
       <div className={intVisibility ? 'interests vis' : 'interests unvis'}>
         <div className='heading'>
         <h3>Interests</h3>
@@ -51,6 +57,9 @@ function About() {
         My immediate interests related to computer science are DATABASE STUFF, and python</h6>
         </div>
       </div>
+      <a href="#proj" className='plug' id="proj">
+            <img className='ext' src='/Files/down-done.png' width="40" height="40"/>
+      </a>
     </div>
   );
 }

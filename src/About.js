@@ -17,11 +17,11 @@ function About() {
   return (
 
     <div className="main" id='about'>
-      <h1>About me</h1>
+      <h1 className={introVisibility ? 'head' : 'head not'}>About me</h1>
 
       <div className={introVisibility ? 'intro vis' : 'intro unvis'}>
         <div className='heading'>
-        <h3>Introduction</h3>
+        <h3 className={introVisibility ? 'head' : 'head not'}>Introduction</h3>
         </div>
         <div className='info' ref={introRef}>
         <img className={introVisibility ? 'right visible' : 'right unvisible'} src='/Files/todo.png' width='200px' height='200px'/>
@@ -29,12 +29,12 @@ function About() {
         years old. </h6>
         </div>
       </div>
-      <a href="#prof" className='plug' id='prof'>
+      <a href="#prof" className={introVisibility ? 'plug' : 'plug not'} id='prof'>
             <img className='ext' src='/Files/down-done.png' width="40" height="40"/>
       </a>
       <div className={profVisibility ? 'prof vis' : 'prof unvis'}>
         <div className='heading'>
-        <h3>Professional</h3>
+        <h3 className={profVisibility ? 'head' : 'head not'}>Professional</h3>
         </div>
         <div className='info' ref={profRef}>
         <h6 className={profVisibility ? 'right ab text-box visible' : 'right ab text-box unvisible'}>I graduated high school in the spring of 2019. I chose to attend The Ohio State University where I am
@@ -43,12 +43,12 @@ function About() {
         <img className={profVisibility ? 'left visible' : 'left unvisible'} src='/Files/todo.png' width='200px' height='200px'/>
         </div>
       </div>
-      <a href="#int" className='plug' id='int'>
+      <a href="#int" className={profVisibility ? 'plug' : 'plug not'} id='int'>
             <img className='ext' src='/Files/down-done.png' width="40" height="40"/>
       </a>
       <div className={intVisibility ? 'interests vis' : 'interests unvis'}>
         <div className='heading'>
-        <h3>Interests</h3>
+        <h3 className={intVisibility ? 'head' : 'head not'}>Interests</h3>
         </div>
         <div className='info'  ref={intRef}>
         <img className={intVisibility ? 'right visible' : 'right unvisible'} src='/Files/todo.png' width='200px' height='200px'/>
@@ -57,7 +57,7 @@ function About() {
         My immediate interests related to computer science are DATABASE STUFF, and python</h6>
         </div>
       </div>
-      <a href="#proj" className='plug' id="proj">
+      <a href="#proj" className={intVisibility ? 'plug' : 'plug not'} id="proj">
             <img className='ext' src='/Files/down-done.png' width="40" height="40"/>
       </a>
     </div>

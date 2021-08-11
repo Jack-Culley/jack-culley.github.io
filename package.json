@@ -14,7 +14,7 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
-  "homepage": "https://Jack-Culley.github.io/jackwebsite",
+  "homepage": "https://jack-culley.github.io",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

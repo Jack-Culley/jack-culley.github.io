@@ -30,7 +30,7 @@ function About() {
         I am currently 20 years old. </h6>
         </div>
       </div>
-      <a href="#prof" className={introVisibility ? 'plug' : 'plug not'} id='prof'>
+      <a href="#prof" className={introVisibility ? 'plug arrow' : 'plug not arrow'} id='prof'>
             <img className='ext' src='Files/down-done.png' width="40" height="40"/>
       </a>
       <div className={profVisibility ? 'prof vis' : 'prof unvis'}>
@@ -45,7 +45,7 @@ function About() {
         <img className={profVisibility ? 'left visible' : 'left unvisible'} src='todo.png' width='200px' height='200px'/>
         </div>
       </div>
-      <a href="#int" className={profVisibility ? 'plug' : 'plug not'} id='int'>
+      <a href="#int" className={profVisibility ? 'plug arrow' : 'plug not arrow'} id='int'>
             <img className='ext' src='Files/down-done.png' width="40" height="40"/>
       </a>
       <div className={intVisibility ? 'interests vis' : 'interests unvis'}>
@@ -60,7 +60,7 @@ function About() {
         My immediate interests related to computer science are backend web development(PHP, SQL, MySQL), and python.</h6>
         </div>
       </div>
-      <a href="#proj" className={intVisibility ? 'plug' : 'plug not'} id="proj">
+      <a href="#proj" className={intVisibility ? 'plug arrow' : 'plug not arrow'} id="proj">
             <img className='ext' src='Files/down-done.png' width="40" height="40"/>
       </a>
     </div>

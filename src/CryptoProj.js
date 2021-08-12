@@ -6,7 +6,7 @@ function CryptoProj() {
     <div className="Proj">
         <h2>Cryptocurrency Tracker - in progress</h2>
         <a href="https://github.com/Jack-Culley/cryptodatacollection" target="_blank">
-            <img src='Files/crypto.jpg' width="40%" height="40%"/>
+            <img className='picproj' src='Files/crypto.jpg' width="40%" height="40%"/>
         </a>
         <h3 className='text-box proj'>
           I believe cryptocurrency has a lot of potential so I like to track prices of my favorite coins.

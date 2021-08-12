@@ -1,7 +1,5 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import './index.css';
-import { Link } from 'react-router-dom';
-import useOnScreen from './Hooks/useOnScreen';
 import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
@@ -17,7 +15,7 @@ function Home() {
     <div className="main">
         <div className="container">
         <div className="column">
-            <img src='Files/headshot.jpg' width='370px' height='auto'/>
+            <img className="me" src='Files/headshot.jpg' width='370px' height='auto'/>
         </div>
         <div className="column text-box">
         <h1>John "Jack" Culley</h1>
@@ -34,7 +32,7 @@ function Home() {
                         <img className='ext' src='Files/email.png' width='45' height='45'/>
                     </a>
         </div>
-        <a href="#about" className='plug'>
+        <a href="#about" className='plug arrow'>
             <img className='ext' src='Files/down-done.png' width="40" height="40"/>
         </a>
         </div>

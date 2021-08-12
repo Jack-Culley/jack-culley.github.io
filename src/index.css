@@ -232,7 +232,7 @@ h5 {
 
 .socials {
     width: 15%;
-    margin-bottom: 3.25em;
+    margin-bottom: 5.25em;
     padding: 0% 15%;
     display: flex;
     align-items: center;
@@ -247,7 +247,7 @@ h5 {
 }
 
 .arrow {
-    margin-bottom: 5.85em;
+    margin-bottom: 2.85em;
 }
 
 form {
@@ -383,6 +383,7 @@ h3 {
     transform: translateX(55%);
     opacity: 0;
     transition: transform 0.5s ease-in, opacity 0.3s ease-out;
+    display: absolute;
 }
 
 .left.visible {
@@ -399,6 +400,7 @@ h3 {
     transform: translateX(-100%);
     opacity: 0;
     transition: transform 0.5s ease-in, opacity 0.3s ease-out;
+    display: absolute;
 }
 
 .right.visible {
@@ -423,4 +425,80 @@ h3 {
     position: absolute;
     height: 1px;
     top: 250rem;
+}
+
+.interests {
+    margin-bottom: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .arrow {
+        display: none;
+    }
+
+    .nav-links {
+        padding: 11px 0px;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .nav-link {
+        margin: 0px;
+    }
+
+    nav {
+        height: 15%;
+        flex-direction: column;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .me {
+        padding-top: 25%;
+    }
+    
+    .interests, .intro, .prof {
+        width: 130%;
+        margin: 20% 0%;
+    }
+
+    #about {
+        padding: 20%;
+    }
+    .text-box {
+        width: 90%;
+    }
+
+    .picproj {
+        width: 90%;
+    }
+
+    #project {
+        width: 90%;
+    }
+
+    #contact {
+        margin: 20% 3% 10% 3%;
+    }
+
+    .text-box.proj {
+        width: 90%;
+    }
+
+    .right.unvisible {
+        transform: translateX(0%);
+    }
+
+    .left.unvisible {
+        transform: translateX(0%);
+    }
+
+    .left, .right {
+        text-align: center;
+    }
+
+    
 }

@@ -15,12 +15,7 @@ function Index() {
                 </Switch>
             </div>
             <div className="footer">
-                <img src="Files/java-done.png" width="50" height="50" className="feet"/>
-                <img src="Files/css-done.png" width="50" height="50" className="feet"/>
-                <img src="Files/html-done.png" width="50" height="50" className="feet"/>
-                <img src="Files/react-done.png" width="50" height="50" className="feet"/>
-                <img src="Files/js-done.png" width="50" height="50" className="feet"/>
-                <img src="Files/nodejs-done.png" width="50" height="50" className="feet"/>
+                <h5>&#169; 2021 Jack Culley</h5>
 
             </div>
         </Router>

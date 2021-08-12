@@ -17,7 +17,7 @@ function Home() {
     <div className="main">
         <div className="container">
         <div className="column">
-            <img src='Files/headshot.jpg' width='270px' height='auto'/>
+            <img src='Files/headshot.jpg' width='370px' height='auto'/>
         </div>
         <div className="column text-box">
         <h1>John "Jack" Culley</h1>

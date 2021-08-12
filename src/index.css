@@ -110,7 +110,7 @@ nav {
 }
 
 .link {
-    margin: 0% 0% 0% 1%;
+    margin: 0% 1% 0% 1%;
     color: var(--stand-out);
 }
 
@@ -188,6 +188,10 @@ textarea {
 .submit-button:disabled {
     cursor: not-allowed;
     opacity: 0.4;
+}
+
+h5 {
+    color: var(--backgroundcolorsec);
 }
 
 .submit-button:disabled:hover {

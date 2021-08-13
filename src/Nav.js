@@ -20,7 +20,7 @@ function Nav() {
             <a href='#about' className={abVis ? 'nav-link seen' : 'nav-link'}>
                 <li>About Me</li>
             </a>
-            <a className={projVis ? 'nav-link seen' : 'nav-link'} href='#proj'>
+            <a className={projVis ? 'nav-link seen' : 'nav-link'} href='#project'>
                 <li>My Projects</li>
             </a>
             <a className={conVis ? 'nav-link seen' : 'nav-link'} href='#contact'>

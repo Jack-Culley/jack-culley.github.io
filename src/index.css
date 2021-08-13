@@ -454,12 +454,13 @@ h3 {
 
     .logo {
         position: absolute;
-        top: 50em;
-        right: 19em;
+        top: 590%;
+        right: 75%;
     }    
 
     .me {
-        padding-top: 25%;
+        margin-top: 25%;
+        width: 100%;
     }
     
     .interests, .intro, .prof {
@@ -502,5 +503,23 @@ h3 {
         text-align: center;
     }
 
+    .con-ref {
+        top: 277rem;
+    }
+
+    .proj-ref {
+        top: 228rem;
+    }
+
+    .ab-ref {
+        top: 146 rem;
+    }
     
+    .ext {
+        margin: 5px;
+    }
+
+    .socials {
+        margin-bottom: 2.25em;
+    }
 }

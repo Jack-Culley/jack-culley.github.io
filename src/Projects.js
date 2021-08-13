@@ -13,7 +13,7 @@ function Projects() {
         <div className='project-nav'>
               <Switch>
                 <Route path="/" exact component={CryptoProj}/>
-                <Route path="/project-2" component={WebsiteProj}/>
+                <Route path="/project-2" exact component={WebsiteProj}/>
               </Switch>
               <ProjectNav />
         </div>

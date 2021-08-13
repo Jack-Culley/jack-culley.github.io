@@ -1,14 +1,22 @@
 import React from 'react';
 import './index.css';
-import { Link } from 'react-router-dom';
 import useOnScreen from './Hooks/useOnScreen';
 
 function About() {
 
-   const Options = {
-        threshold : 0.5,
-        rootMargin : "-40% 0px 0px 0px"
-   }
+  var mediaQuery = window.matchMedia("(max-width: 600px)");
+  let Options;
+  if(mediaQuery){
+    Options = {
+      threshold : 0.5,
+      rootMargin : "1000px 0px 0px 0px"
+    };
+  } else {
+    Options = {
+      threshold : 0.5,
+      rootMargin : "-40% 0px 0px 0px"
+    };
+  }
    
    const [introRef, introVisibility] = useOnScreen(Options);
    const [profRef, profVisibility] = useOnScreen(Options);

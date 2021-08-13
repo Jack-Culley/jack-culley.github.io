@@ -14,7 +14,7 @@ function Nav() {
   <div>
     <nav>
         <a className='logo' href='#root'>
-            <h3>Logo</h3>
+            <img src="Files/logo.png" width="90px" height="auto"/>
         </a>
         <div className='nav-links'>
             <a href='#about' className={abVis ? 'nav-link seen' : 'nav-link'}>

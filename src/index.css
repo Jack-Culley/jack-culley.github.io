@@ -453,8 +453,10 @@ h3 {
     }
 
     .logo {
-        display: none;
-    }
+        position: absolute;
+        top: 50em;
+        right: 19em;
+    }    
 
     .me {
         padding-top: 25%;

@@ -522,4 +522,8 @@ h3 {
     .socials {
         margin-bottom: 2.25em;
     }
+
+    .proj-link {
+        padding: 3%;
+    }
 }

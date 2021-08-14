@@ -29,7 +29,7 @@ function About() {
 
       <div className={introVisibility ? 'intro vis' : 'intro unvis'}>
         <div className='heading'>
-        <h3 className={introVisibility ? 'head' : 'head not'}>Introduction</h3>
+        <h3 className={introVisibility ? 'head' : 'head not'}>Current Life</h3>
         </div>
         <div className='info' ref={introRef}>
         <img className={introVisibility ? 'right visible' : 'right unvisible'} src='todo.png' width='200px' height='200px'/>

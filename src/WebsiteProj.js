@@ -6,7 +6,7 @@ function WebsiteProj() {
     <div className="Proj">
         <h2>This Website</h2>
         <a href="https://github.com/Jack-Culley/jackwebsite" target="_blank">
-            <img className='picproj' src='Files/headshot.jpg' width="40%" height="40%"/>
+            <img className='picproj' src='Files/favicon.png' width="40%" height="40%"/>
         </a>
         <h3 className='text-box proj'>This was my first website built using ReactJS. In this website, 
         I utilized ReactRouter,  

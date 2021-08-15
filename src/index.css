@@ -148,14 +148,14 @@ nav {
 
 input[type=text], textarea {
   margin: 4px;
-  padding: 12px 40px 12px 12px;
+  padding: 12px 16px 12px 12px;
   display: inline-block;
   border: 1px solid white;
   border-radius: 4px;
   box-sizing: border-box;
   background: none;
   color: white;
-  width: 96%;
+  width: 95%;
 }
 
 textarea {
@@ -433,8 +433,16 @@ h3 {
 
 @media only screen and (max-width: 600px) {
 
+    .column.text-box.home {
+        padding: 4% 2% 2% 2%;
+    }
     .arrow {
         display: none;
+    }
+
+    .column {
+        margin: 2% 3% 2% 3%;
+        padding: 0%;
     }
 
     .nav-links {
@@ -514,7 +522,7 @@ h3 {
     }
 
     .proj-ref {
-        top: 228rem;
+        top: 277rem;
     }
 
     .ab-ref {

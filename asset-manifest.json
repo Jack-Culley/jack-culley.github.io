@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.653d2070.chunk.css",
-    "main.js": "/static/js/main.8b6ae056.chunk.js",
-    "main.js.map": "/static/js/main.8b6ae056.chunk.js.map",
+    "main.css": "/static/css/main.2b27e15b.chunk.css",
+    "main.js": "/static/js/main.3637a148.chunk.js",
+    "main.js.map": "/static/js/main.3637a148.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f18ab902.js",
     "runtime-main.js.map": "/static/js/runtime-main.f18ab902.js.map",
     "static/js/2.037d984b.chunk.js": "/static/js/2.037d984b.chunk.js",
     "static/js/2.037d984b.chunk.js.map": "/static/js/2.037d984b.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.653d2070.chunk.css.map": "/static/css/main.653d2070.chunk.css.map",
+    "static/css/main.2b27e15b.chunk.css.map": "/static/css/main.2b27e15b.chunk.css.map",
     "static/js/2.037d984b.chunk.js.LICENSE.txt": "/static/js/2.037d984b.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/Eastman-Condensed-Regular-trial.bc96fd00.otf"
   },
   "entrypoints": [
     "static/js/runtime-main.f18ab902.js",
     "static/js/2.037d984b.chunk.js",
-    "static/css/main.653d2070.chunk.css",
-    "static/js/main.8b6ae056.chunk.js"
+    "static/css/main.2b27e15b.chunk.css",
+    "static/js/main.3637a148.chunk.js"
   ]
 }

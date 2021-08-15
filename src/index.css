@@ -464,12 +464,13 @@ h3 {
     }
     
     .interests, .intro, .prof {
-        width: 130%;
+        width: 100%;
         margin: 20% 0%;
     }
 
     #about {
-        padding: 20%;
+        margin: 20% 7.97%;
+        padding: 0%;
     }
     .text-box {
         width: 90%;
@@ -499,8 +500,13 @@ h3 {
         transform: translateX(0%);
     }
 
-    .left, .right {
+    .left {
         text-align: center;
+    }
+
+    .right {
+        width: 90%;
+        margin-bottom: 3%;
     }
 
     .con-ref {

@@ -31,11 +31,11 @@ function About() {
         <h3 className={profVisibility ? 'head' : 'head not'}>Professional</h3>
         </div>
         <div className='info' ref={profRef}>
-        <h6 className={profVisibility ? 'right ab text-box visible' : 'right ab text-box unvisible'}>
-        I graduated high school in the spring of 2019. I chose to attend The Ohio State University where I am
+        <img className={profVisibility ? 'right visible' : 'right unvisible'} src='Files/prof.JPG' width='200px' height='auto'/>
+        <h6 className={profVisibility ? 'left ab text-box visible' : 'left ab text-box unvisible'}>
+        I graduated high school in May of 2019. I chose to attend The Ohio State University where I am
         currently a junior pursuing a bachelors degree in Computer Science and Engineering. I plan to graduate with my
         intended degree in the spring of 2023.</h6>
-        <img className={profVisibility ? 'left visible' : 'left unvisible'} src='Files/prof.JPG' width='200px' height='auto'/>
         </div>
       </div>
       <a href="#prof" className={profVisibility ? 'plug arrow' : 'plug not arrow'} id='prof'>

@@ -62,7 +62,7 @@ function About() {
         <h3 className={intVisibility ? 'head' : 'head not'}>Interests</h3>
         </div>
         <div className='info'  ref={intRef}>
-        <img className={intVisibility ? 'right visible' : 'right unvisible'} src='Files/int.JPG' width='290px' height='auto'/>
+        <img className={intVisibility ? 'right visible' : 'right unvisible'} src='Files/int.JPG' width='290px' height='100%'/>
         <h6 className={intVisibility ? 'left ab text-box visible' : 'left ab text-box unvisible'}>
         Outside of school I enjoy spending my time lifting, cycling, video-gaming, woodworking, traveling, and simply hanging out with
         friends/family. I also enjoy coding(hence my major) and like to learn new technologies for building various applications.

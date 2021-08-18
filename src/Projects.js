@@ -5,9 +5,9 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ProjectNav from './ProjectNav.js';
 import WebsiteProj from './WebsiteProj.js';
 
-function Projects() {
+function Projects({projRef}) {
   return (
-    <div className="main" id="project">
+    <div className="main" id="project" ref={projRef}>
       <h1>Projects</h1>
       <Router>
         <div className='project-nav'>

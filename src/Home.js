@@ -3,10 +3,24 @@ import './index.css';
 import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
+import useOnScreen from './Hooks/useOnScreen';
+import Nav from './Nav.js';
 
 function Home() {
 
+    const options = {
+        rootMargin: "-50% 0% -50% 0%"
+    }
+
+    const [abRef, abVis] = useOnScreen(options);
+    const [projRef, projVis] = useOnScreen(options);
+    const [conRef, conVis] = useOnScreen(options);
+
   return (
+    <div className="main">
+        <div style={{width: '100%'}}>
+                <Nav abVis={abVis} projVis={projVis} conVis={conVis}/>
+        </div>
     <div className="main">
         <div className="container">
         <div className="column">
@@ -32,9 +46,10 @@ function Home() {
         </a>
         </div>
         </div>
-        <About />
-        <Projects />
-        <Contact />
+        <About abRef={abRef}/>
+        <Projects projRef={projRef}/>
+        <Contact conRef={conRef}/>
+    </div>
     </div>
   );
 }

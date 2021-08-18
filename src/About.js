@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import useOnScreen from './Hooks/useOnScreen';
 
-function About() {
+function About({abRef}) {
 
   var mediaQuery = window.matchMedia("(max-width: 600px)");
   let Options;
@@ -24,7 +24,7 @@ function About() {
 
   return (
 
-    <div className="main" id='about'>
+    <div className="main" id='about' ref={abRef}>
       <h1 className={profVisibility ? 'head' : 'head not'}>About me</h1>
       <div className={profVisibility ? 'prof vis' : 'prof unvis'}>
         <div className='heading'>

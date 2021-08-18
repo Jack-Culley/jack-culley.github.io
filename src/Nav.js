@@ -1,14 +1,8 @@
 import React from 'react';
 import './index.css';
-import { Link } from 'react-router-dom';
-import useOnScreen from './Hooks/useOnScreen';
 
 
-function Nav() {
-
-    const [abRef, abVis] = useOnScreen({rootMargin: "0% 0% 175% 0%"});
-    const [projRef, projVis] = useOnScreen({rootMargin: "-50% 0% 100% 0%"});
-    const [conRef, conVis] = useOnScreen({rootMargin: "0% 0% 65% 0%"});
+function Nav({abVis, projVis, conVis}) {
 
   return (
   <div>
@@ -28,12 +22,9 @@ function Nav() {
             </a>
         </div>
         <div className="res-container">
-             <Link className='resume' to="Files/Resume.pdf" target="_blank" download>Download My Resume</Link>
+             <button className='resume' href="Files/Resume.pdf" target="_blank" download>Download My Resume</button>
         </div>
     </nav>
-    <div ref={abRef} className="ab-ref"></div>
-    <div ref={projRef} className="proj-ref"></div>
-    <div ref={conRef} className="con-ref"></div>
   </div>
 
   );

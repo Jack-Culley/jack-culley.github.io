@@ -2,9 +2,9 @@ import React from 'react';
 import './index.css';
 import Form from './Form';
 
-function Contact() {
+function Contact({conRef}) {
   return (
-    <div className="main" id="contact">
+    <div className="main" id="contact" ref={conRef}>
       <h1>Contact Me</h1>
       <Form />
     </div>

@@ -31,7 +31,7 @@ function About() {
         <h3 className={profVisibility ? 'head' : 'head not'}>Professional</h3>
         </div>
         <div className='info' ref={profRef}>
-        <img className={profVisibility ? 'right visible' : 'right unvisible'} src='Files/prof.JPG' width='200px' height='auto'/>
+        <img className={profVisibility ? 'right visible' : 'right unvisible'} src='Files/prof.JPG' width='200px' height='100%'/>
         <h6 className={profVisibility ? 'left ab text-box visible' : 'left ab text-box unvisible'}>
         I graduated high school in May of 2019. I chose to attend The Ohio State University where I am
         currently a junior pursuing a bachelors degree in Computer Science and Engineering. I plan to graduate with my
@@ -46,7 +46,7 @@ function About() {
         <h3 className={introVisibility ? 'head' : 'head not'}>College Life</h3>
         </div>
         <div className='info' ref={introRef}>
-        <img className={introVisibility ? 'right visible' : 'right unvisible'} src='Files/life.JPG' width='250px' height='auto'/>
+        <img className={introVisibility ? 'right visible' : 'right unvisible'} src='Files/life.JPG' width='250px' height='100%'/>
         <h6 className={introVisibility ? 'left ab text-box visible' : 'left ab text-box unvisible'}>
           Outside of the classroom I am involved in Cru student ministries and Beta Upsilon Chi(BYX),
           a Christian fraternity. In Cru, I lead a small group for one of the dorms on campus. In BYX I am the 

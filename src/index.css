@@ -286,7 +286,6 @@ form {
     align-items: center;
     text-align: center;
     background-color: var(--backgroundcolor);
-    /* padding: 5% 0%; */
 }
 
 .secondary {

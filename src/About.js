@@ -49,7 +49,7 @@ function About({abRef}) {
         <img className={introVisibility ? 'right visible' : 'right unvisible'} src='Files/life.JPG' width='250px' height='100%'/>
         <h6 className={introVisibility ? 'left ab text-box visible' : 'left ab text-box unvisible'}>
           Outside of the classroom I am involved in Cru student ministries and Beta Upsilon Chi(BYX),
-          a Christian fraternity. In Cru, I lead a small group for one of the dorms on campus. In BYX I am the 
+          a social fraternity. In Cru, I lead a small group for one of the dorms on campus. In BYX I am the 
           Pledge Captain, which involves leading and educating men who wish to join the fraternity. 
         </h6>
         </div>

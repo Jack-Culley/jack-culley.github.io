@@ -94,11 +94,11 @@ class Form extends React.Component {
                     <div className="form-input">
                         <textarea value={this.state.message} onChange={this.handleMessageChange} name="message" placeholder="Your Message"/>
                     </div>
-                    <div>{this.state.status}</div>
                 </div>
                 <div>
                     <button disabled={!enabled} className='submit-button' type="submit">Send Your Message</button>
                 </div>
+                <div className='status'>{this.state.status}</div>
             </form>
         );
     }

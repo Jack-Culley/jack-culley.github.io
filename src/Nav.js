@@ -22,7 +22,7 @@ function Nav({abVis, projVis, conVis}) {
             </a>
         </div>
         <div className="res-container">
-            <a href="Files/Resume.pdf" target="_blank" download>
+            <a href="Files/Jack_Culley_Resume.pdf" target="_blank" download>
                 <button className='resume'>Download My Resume</button>
             </a>
         </div>

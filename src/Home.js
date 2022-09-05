@@ -28,7 +28,7 @@ function Home() {
         </div>
         <div className="column text-box home">
         <h1>John "Jack" Culley</h1>
-        <h4>Student Software Developer</h4>
+        <h4>Student Software Engineer</h4>
         
         <div className='socials'>
                     <a className='plug' href="https://github.com/Jack-Culley" target="_blank">

@@ -1,20 +1,23 @@
 import React from 'react';
 import './index.css';
-import { NavLink } from 'react-router-dom';
+import GalleryProj from './GalleryProj.js';
+import WebsiteProj from './WebsiteProj.js';
 
-function ProjectNav() {
-  return (
-    <div className="pagination-cont">
-        <ul className='pagination'>
-            <NavLink activeStyle={{backgroundColor: "#618930", color: "white"}} exact to='/' className='proj-link'>
-                <li>1</li>
-            </NavLink>
-            <NavLink activeStyle={{backgroundColor: "#618930", color: "white"}} to='/project-2' className='proj-link'>
-                <li>2</li>
-            </NavLink>
-        </ul>
-    </div>
-  );
+
+function ProjectNav({page}) {
+    if(page == 1) {
+        return (
+            <GalleryProj/>
+        );
+    } else if (page == 2) {
+        return (
+            <WebsiteProj/>
+        );
+    } else {
+        return (
+            null
+        );
+    }
 }
 
 export default ProjectNav;

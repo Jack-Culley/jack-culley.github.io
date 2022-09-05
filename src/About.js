@@ -64,9 +64,9 @@ function About({abRef}) {
         <div className='info'  ref={intRef}>
         <img className={intVisibility ? 'right visible' : 'right unvisible'} src='Files/int.JPG' width='290px' height='100%'/>
         <h6 className={intVisibility ? 'left ab text-box visible' : 'left ab text-box unvisible'}>
-        Outside of school I enjoy spending my time lifting, cycling, video-gaming, woodworking, traveling, and simply hanging out with
-        friends/family. I also enjoy coding(hence my major) and like to learn new technologies for building various applications.
-        My immediate interests related to computer science are backend web development(PHP, SQL, MySQL), and python.</h6>
+        Outside of school I enjoy spending my time lifting, cycling, video-gaming, woodworking, traveling, and hanging out with
+        friends/family. I also enjoy coding and like to learn new technologies for building various applications.
+        My immediate interests related to computer science are web development and machine learning/AI.</h6>
         </div>
       </div>
       <a href="#proj" className={intVisibility ? 'plug arrow' : 'plug not arrow'} id="proj">

@@ -28,13 +28,13 @@ function About({abRef}) {
       <h1 className={profVisibility ? 'head' : 'head not'}>About me</h1>
       <div className={profVisibility ? 'prof vis' : 'prof unvis'}>
         <div className='heading'>
-        <h3 className={profVisibility ? 'head' : 'head not'}>Professional</h3>
+        <h3 className={profVisibility ? 'head' : 'head not'}>Education</h3>
         </div>
         <div className='info' ref={profRef}>
-        <img className={profVisibility ? 'right visible' : 'right unvisible'} src='Files/prof.JPG' width='200px' height='100%'/>
+        <img className={profVisibility ? 'right visible' : 'right unvisible'} src='Files/fam.jpg' width='300px' height='100%'/>
         <h6 className={profVisibility ? 'left ab text-box visible' : 'left ab text-box unvisible'}>
         I graduated high school in May of 2019. I chose to attend The Ohio State University where I am
-        currently a junior pursuing a bachelors degree in Computer Science and Engineering. I plan to graduate with my
+        currently a senior pursuing a bachelors degree in Computer Science and Engineering. I plan to graduate with my
         intended degree in the spring of 2023.</h6>
         </div>
       </div>
@@ -43,14 +43,14 @@ function About({abRef}) {
       </a>
       <div className={introVisibility ? 'intro vis' : 'intro unvis'}>
         <div className='heading'>
-        <h3 className={introVisibility ? 'head' : 'head not'}>College Life</h3>
+        <h3 className={introVisibility ? 'head' : 'head not'}>Experience</h3>
         </div>
         <div className='info' ref={introRef}>
-        <img className={introVisibility ? 'right visible' : 'right unvisible'} src='Files/life.JPG' width='250px' height='100%'/>
+        <img className={introVisibility ? 'right visible' : 'right unvisible'} src='Files/work.jpg' width='350px' height='100%'/>
         <h6 className={introVisibility ? 'left ab text-box visible' : 'left ab text-box unvisible'}>
-          Outside of the classroom I am involved in Cru student ministries and Beta Upsilon Chi(BYX),
-          a social fraternity. In Cru, I lead a small group for one of the dorms on campus. In BYX I am the 
-          Pledge Captain, which involves leading and educating men who wish to join the fraternity. 
+          I started coding in the winter of 2019. I first learned Java then C, Javascript, and Python. My first internship was with KeyBank where I developed
+          software to automate various business processes. Some projects that I have worked on in and out of school are a web application to manage graders at OSU,
+          a web application to store and classify photos, this website, and a Java package of data structures and other software components.
         </h6>
         </div>
       </div>
@@ -62,9 +62,9 @@ function About({abRef}) {
         <h3 className={intVisibility ? 'head' : 'head not'}>Interests</h3>
         </div>
         <div className='info'  ref={intRef}>
-        <img className={intVisibility ? 'right visible' : 'right unvisible'} src='Files/int.JPG' width='290px' height='100%'/>
+        <img className={intVisibility ? 'right visible' : 'right unvisible'} src='Files/camp.jpg' width='390px' height='100%'/>
         <h6 className={intVisibility ? 'left ab text-box visible' : 'left ab text-box unvisible'}>
-        Outside of school I enjoy spending my time lifting, cycling, video-gaming, woodworking, traveling, and hanging out with
+        Outside of school I enjoy spending my time lifting, camping, woodworking, and hanging out with
         friends/family. I also enjoy coding and like to learn new technologies for building various applications.
         My immediate interests related to computer science are web development and machine learning/AI.</h6>
         </div>

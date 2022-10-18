@@ -42,7 +42,7 @@ function Projects({projRef}) {
                 variant='outlined'
                 onChange={handleChange}
                 page={page}
-                sx={{ position: 'relative', color: '#87c232' }}
+                sx={{ position: 'relative', color: 'primary' }}
                 />
             </Box>
       </div>

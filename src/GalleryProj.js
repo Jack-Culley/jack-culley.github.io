@@ -6,7 +6,7 @@ function GalleryProj() {
     <div className="Proj">
         <h2>Smart Photo Library</h2>
         <a href="https://github.com/Jack-Culley/machineLearningPrac" target="_blank" id='video'>
-          <iframe className='picproj' width='50%' height='100%' src='https://www.youtube.com/embed/zqdGbZ9tVcI'/>        
+          <iframe className='picproj' width='50%' height='100%' src='https://www.youtube.com/embed/6-jsbPX6ho4'/>        
         </a>
         <h3 className='text-box proj'>
           I built this project to sharpen my skills with React as well as learn more backend tools. In this particular project I used
